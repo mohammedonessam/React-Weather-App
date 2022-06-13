@@ -112,44 +112,32 @@ input{
 
 
 .mainIcon {
-  height: 1vmin;
-  pointer-events: none;
+  height: 1em;
   color:#4CAF50;
+  animation: rotation 5s infinite linear;
+  font-size: 100px;
+  display: block;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .mainIcon {
-    animation: rotation 5s infinite linear;  }
-    /* animation: App-logo-spin  infinite 2s linear; */
     @keyframes rotation {
       from {
-        transform: rotate(359deg);
+        transform: rotate(0deg);
       }
-}}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+      to{
+        transform: rotate(360deg);
+      }
+}
+.sconIcon{
+  position: absolute;
+  left: 49%;
+  top: 12%;
+  color: oldlace;
+  background-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .weather::before{
     background-color: #0075ff;
     border-color: #08366b;

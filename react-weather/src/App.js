@@ -56,7 +56,7 @@ class App extends Component {
       <div className='App'>
       <div>
       <i className="mainIcon fa-solid fa-snowflake"></i>
-      <i className="fa-solid fa-temperature-high p-2"/>
+      <i className="sconIcon fa-solid fa-temperature-high p-2"/>
       </div>
       <h1 className='header'>React Weather App</h1>
       <Form GetWeather={this.GetWeather}/>
