@@ -74,7 +74,8 @@ div .city,
 .desc,
 .date,
 .time,
-.clock{
+.clock,
+.error{
   position: sticky;
   text-align: center;
   width: 100%;
@@ -113,12 +114,10 @@ input{
 
 .mainIcon {
   height: 1em;
-  color:#4CAF50;
-  animation: rotation 5s infinite linear;
+  color:#4DAF50;
+  animation: rotation 10s infinite linear;
   font-size: 100px;
   display: block;
-    align-items: center;
-    justify-content: center;
 }
 
     @keyframes rotation {
